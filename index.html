@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kadwa:wght@400;700&family=Lilita+One&family=Lobster&family=Luckiest+Guy&family=Madimi+One&family=Margarine&family=Mochiy+Pop+One&family=Narnoor:wght@400;500;600;700;800&family=Oregano:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Scada:ital,wght@0,400;0,700;1,400;1,700&family=Signika+Negative:wght@300..700&family=Signika:wght@300..700&family=Wix+Madefor+Display:wght@400..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&family=Yuji+Boku&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kadwa:wght@400;700&family=Lilita+One&family=Lobster&family=Luckiest+Guy&family=Madimi+One&family=Margarine&family=Mochiy+Pop+One&family=Narnoor:wght@400;500;600;700;800&family=Oregano:ital@0;1&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Scada:ital,wght@0,400;0,700;1,400;1,700&family=Signika+Negative:wght@300..700&family=Signika:wght@300..700&family=Wix+Madefor+Display:wght@400..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&family=Yuji+Boku&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kadwa:wght@400;700&family=Lilita+One&family=Lobster&family=Luckiest+Guy&family=Madimi+One&family=Margarine&family=Mochiy+Pop+One&family=Narnoor:wght@400;500;600;700;800&family=Oregano:ital@0;1&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Scada:ital,wght@0,400;0,700;1,400;1,700&family=Signika+Negative:wght@300..700&family=Signika:wght@300..700&family=Wix+Madefor+Display:wght@400..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&family=Yuji+Boku&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kadwa:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Lobster&family=Luckiest+Guy&family=Madimi+One&family=Margarine&family=Mochiy+Pop+One&family=Narnoor:wght@400;500;600;700;800&family=Oregano:ital@0;1&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Scada:ital,wght@0,400;0,700;1,400;1,700&family=Signika+Negative:wght@300..700&family=Signika:wght@300..700&family=Wix+Madefor+Display:wght@400..800&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&family=Yuji+Boku&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <h2>Jannuar <span>Thon</span></h2>
+        </div>
+
+        <ul class="nav-links">
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#service">Service</a></li>
+            <li> <a href="#portfolio">Portfolio</a></li>
+            <li> <a href="#journey">Journey</a></li>
+        </ul>
+
+        <div class="nav-btn">
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="wrapper-menu">
+        <ul class="nav-links__wrapper">
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#service">Service</a></li>
+            <li> <a href="#portfolio">Portfolio</a></li>
+            <li> <a href="#journey">Journey</a></li>
+        </ul>
+
+        <div class="nav-btn__wrapper">
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <section id="home" class="home-section">
+        <div class="home-container">
+
+            <div class="home-banner">
+                <div class="home-img-wrapper">
+                    <img src="./assets/profile/my-photo-one.png" alt="">
+
+                    <div class="home-data home-data-one">
+                        <span class="home-data-no"> 2+</span>
+                        <h3 class="home-data-title">
+                            Years of <span>Experience</span>
+                        </h3>
+                    </div>
+    
+                    <div class="home-data home-data-two">
+                        <span class="home-data-no">5+</span>
+                        <h3 class="home-data-title">Completed <span>Projects</span></h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="home-content">
+                <h3 class="home-subtitle">From blank screen,</h3>
+                <h1 class="home-title">To <span>badass</span> website.</h1>
+                <p class="home-description">Hi, I'm Jannuar — a teenager frontend enthusiast who crafts responsive, clean, and eye-catching websites for everyone.</p>
+                <div class="home-btn">
+                    <a href="https://drive.google.com/file/d/1V9FhzW0G05W5Q8SBQIivmIGV7kB8pbL6/view?usp=sharing" class="home-btn-one" target="_blank">
+                        <span>View My CV</span>
+                        <i class='bx bx-play-circle play-logo'></i>
+                    </a>
+                    <a href="#contact" class="home-btn-two">Contact</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="link-skill">
+        <section class="skill-marquee">
+            <div class="skills-track" id="skillsTrack"></div>
+        </section>
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+
+            <div class="about-content">
+                <div class="subtitle-content">
+                    <i class='bx bx-minus'></i>
+                    <h3 class="about-subtitle">About me</h3>
+                </div>
+                <h1 class="about-title">Hi, I'm <span>Jannuar</span>👋</h1>
+                <p class="about-description">
+                    I'm a 18 y.o frontend developer & design enthusiast 
+                    from Indonesia. I started my coding journey 
+                    not by following tutorials, but by getting my hands dirty
+                    — experimenting, failing, learning, and improving every day.
+                </p>
+                <div class="about-btn">
+                    <a href="mailto:januar9a13@gmail.com?subject=Interested%20in%20Hiring&body=Hi%20Jannuar%2C%20I%20found%20your%20portfolio%20and%20I%27m%20interested%20in%20working%20with%20you." class="about-btn-one">
+                        <span>Hire Me</span>
+                        <i class='bx bx-play-circle play-logo'></i>
+                    </a>
+                    <a href="#service" class="about-btn-two">My service</a>
+                </div>
+            </div>
+
+            <div class="about-img-wrapper">
+                <img src="./assets/profile/my-photo-two.png" alt="">
+
+                <div class="about-data about-data-one">
+                    <span class="about-data-no"> 90%</span>
+                    <h3 class="about-data-title">
+                        HTML <span>Expert</span>
+                    </h3>
+                </div>
+
+                <div class="about-data about-data-two">
+                    <span class="about-data-no">65%</span>
+                    <h3 class="about-data-title">
+                        CSS <span>Stylist</span>
+                    </h3>
+                </div>
+
+                <div class="about-data about-data-three">
+                    <span class="about-data-no">40%</span>
+                    <h3 class="about-data-title">
+                        Javascript <span>Rookie</span>
+                    </h3>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="goals-section">
+
+            <div class="goals-container">
+
+                <div class="title-content">
+                    <i class='bx bx-minus'></i>
+                    <h3 class="goals-title"> My goals</h3>
+                </div>
+
+                <div class="goals-grid">
+
+                    <div class="goals-item">
+                        <i class='bx bxs-chevrons-up'></i>
+                        <h3 class="goals-item-title">Level up always</h3>
+                        <span class="goals-item-description">
+                            Keep improving as a dev & designer.
+                        </span>
+                    </div>
+
+                    <div class="goals-item">
+                        <i class='bx bxs-rocket'></i>
+                        <h3 class="goals-item-title">Solving problems</h3>
+                        <span class="goals-item-description">
+                            Build projects and solve real problems.
+                        </span>
+                    </div>
+
+                    <div class="goals-item">
+                        <i class='bx bxs-heart-circle' ></i>
+                        <h3 class="goals-item-title">Family first</h3>
+                        <span class="goals-item-description">
+                            Always prioritize my loved ones.
+                        </span>
+                    </div>
+
+                    <div class="goals-item">
+                        <i class='bx bxs-group' ></i>
+                        <h3 class="goals-item-title">Dream team</h3>
+                        <span class="goals-item-description">
+                            Work with team and share same passion.
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <section  id="service" class="service-section">
+
+        <div class="service-container">
+
+            <div class="service-content">
+
+                <div class="subtitle-service-content">
+                    <i class='bx bx-minus'></i>
+                    <h3 class="service-subtitle">My service</h3>
+                </div>
+
+                <h1 class="service-title">How can i help <span>you</span>🤝</h1>
+                <p class="service-description">
+                    From eye-catching designs to responsive websites — I mix code and creativity to bring digital ideas to life.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="services-item">
+                    <div class="item-description">
+                        <i class='bx bx-code-alt'></i>
+                        <div class="item-wrapper">
+                            <h2 class="services-item-title">Web development</h2>
+                            <p class="services-item-description">
+                                Clean code. Fast performance. Fully responsive. Your website, built with care.
+                            </p>
+                        </div>
+                    </div>
+                    <i class='bx bx-right-top-arrow-circle arrow-icon-item'></i>
+                </div>
+                
+                <div class="services-item">
+                    <div class="item-description">
+                        <i class='bx bx-palette'></i>
+                        <div class="item-wrapper">
+                            <h2 class="services-item-title">UI/UX Design</h2>
+                            <p class="services-item-description">
+                                Every pixel has a purpose. I design interfaces that pretty and guide users naturally.
+                            </p>
+                        </div>
+                    </div>
+                    <i class='bx bx-right-top-arrow-circle arrow-icon-item'></i>
+                </div>
+
+                <div class="services-item">
+                    <div class="item-description">
+                        <i class='bx bx-layout'></i>
+                        <div class="item-wrapper">
+                            <h2 class="services-item-title">Web Design</h2>
+                            <p class="services-item-description">
+                                I create designs that hit different. Every color, font, and layout screams your vibe.
+                            </p>
+                        </div>
+                    </div>
+                    <i class='bx bx-right-top-arrow-circle arrow-icon-item'></i>
+                </div>
+
+                <div class="services-item">
+                    <div class="item-description">
+                        <i class='bx bx-laptop' ></i>
+                        <div class="item-wrapper">
+                            <h2 class="services-item-title">Your Personal Web</h2>
+                            <p class="services-item-description">
+                                You're unique, your website should show it. Let's build your vibe, your way.
+                            </p>
+                        </div>
+                    </div>
+                    <i class='bx bx-right-top-arrow-circle arrow-icon-item'></i>
+                </div>
+
+            </div>
+            
+        </div>  
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-container">
+
+            <div class="portfolio-content">
+
+                <div class="subtitle-portfolio-content">
+                    <i class='bx bx-minus'></i>
+                    <h3 class="portfolio-subtitle">My Portfolio</h3>
+                </div>
+
+                <h1 class="portfolio-title">Some of the <span>projects</span> i've done 🚀</h1>
+            </div>
+
+            <div class="portfolio-grid">
+
+                <div class="portfolio-item">
+                    <div class="item-container">
+                        <img src="./assets/grid-img/1.png" alt="" class="item-img">
+
+                        <div class="item-description-portfolio">
+                            <h1 class="title-description-portfolio">Fruit e-commerce</h1>
+                            <p class="article-item-portfolio">
+                                A simple fruit-themed e-commerce site using HTML, CSS & JS. Focused on clean UI and responsive layout.
+                            </p>
+                            <a href="https://jannuarabii.github.io/JannShop-/" class="btn-item-portfolio">
+                                <span> See Now </span>
+                                <i class='bx bx-play-circle play-logo'></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="item-container">
+                        <img src="./assets/grid-img/2.png" alt="" class="item-img">
+
+                        <div class="item-description-portfolio">
+                            <h1 class="title-description-portfolio">Sumpah Pemuda</h1>
+                            <p class="article-item-portfolio">
+                                A commemorative website built for a national competition using HTML, CSS, and JS — won Favorite Project!
+                            </p>
+                            <a href="https://jannuarabii.github.io/sumpah-pemuda/" class="btn-item-portfolio">
+                                <span> See Now </span>
+                                <i class='bx bx-play-circle play-logo'></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="item-container">
+                        <img src="./assets/grid-img/3.png" alt="" class="item-img">
+
+                        <div class="item-description-portfolio">
+                            <h1 class="title-description-portfolio">Shoes Website</h1>
+                            <p class="article-item-portfolio">
+                                A simple fruit-themed e-commerce site using HTML, CSS & JS. Focused on clean UI and responsive layout.
+                            </p>
+                            <a href="#" class="btn-item-portfolio">
+                                <span> Still process </span>
+                                <i class='bx bx-play-circle play-logo'></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="journey-section">
+        <div class="journey-container">
+
+            <div class="journey-content">
+                <div class="subtitle-journey-content">
+                    <i class='bx bx-minus'></i>
+                    <h3 class="journey-subtitle">My Journey</h3>
+                </div>
+
+                <h1 class="journey-title">The Competitions i've <span>achieved</span> 🚀</h1>
+            </div>
+
+            <div class="timeline">
+
+
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>2024 - Cloud Computing</h3>
+                        <p class="highlight">3rd Place</p>
+                        <p class="timeline-description">student competency competition</p>
+                    </div>
+
+                    <img src="./assets/journey/img-1.png" alt="Cloud Computing">
+                </div>
+
+                <div class="timeline-item right">
+                    <img src="./assets/journey/img-2.png" alt="">
+
+                    <div class="content">
+                        <h3>2024 - Story Telling</h3>
+                        <p class="highlight">Best Costume</p>
+                        <p class="timeline-description">Story Telling Competition</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h3>2024 - Coding Competition</h3>
+                        <p class="highlight">Favorite Project</p>
+                        <p class="timeline-description">National Coding Competition</p>
+                    </div>
+
+                    <img src="./assets/journey/img-3.png" alt="Coding Competition">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+
+            <div class="contact-content">
+                <div class="subtitle-contact-content">
+                    <i class='bx bx-minus'></i>
+                    <h3 class="contact-subtitle">My Contact</h3>
+                </div>
+
+                <h1 class="contact-title">I'd love to <span>hear</span> from you! 🤙</h1>
+
+                <p class="contact-description">
+                    Whether you have a project in mind,
+                     want to collaborate, or just wanna say hi — feel free to hit me up! 
+                     Let's build something awesome together.
+                </p>
+            </div>
+
+            <div class="contact-horizontal">
+
+                <div class="icon-item">
+                    <a href="mailto:januar9a13@gmail.com?subject=Interested%20in%20Hiring&body=Hi%20Jannuar%2C%20I%20found%20your%20portfolio%20and%20I%27m%20interested%20in%20working%20with%20you." target="_blank">
+                        <div class="icon-background">
+                            <i class='bx bxl-gmail'></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="icon-item">
+                    <a href="https://t.me/jannabyyy">
+                        <div class="icon-background">
+                            <i class='bx bxl-telegram' ></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-background">
+                        <i class='bx bxl-linkedin' ></i>
+                    </div>
+                </div>
+
+                <div class="icon-item">
+                    <a href="https://instagram.com/jannuarabyy" target="_blank">
+                        <div class="icon-background">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Crafted with passion and code. © 2024 Jannuar. All rights reserved.
+        </div>
+    </section>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
